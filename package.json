@@ -20,5 +20,11 @@
     "node": ">=14.0.0",
     "npm": ">=6.0.0",
     "yarn": "please use npm"
-  }
+  },
+  "dependencies": {
+    "dcldash": "^0.0.33"
+  },
+  "bundledDependencies": [
+    "dcldash"
+  ]
 }
