@@ -1,4 +1,5 @@
 import {EnemyHitEffects} from './hitEffects'
+import { getRandomInt } from './modules/random'
 /// --- Set up a system ---
 
 // class RotatorSystem {
@@ -27,7 +28,10 @@ function spawnCube(x: number, y: number, z: number) {
   const cube = new Entity()
 
   // add a transform to the entity
-  cube.addComponent(new Transform({ position: new Vector3(x, y, z) }))
+  cube.addComponent(new Transform({ 
+    position: new Vector3(x, y, z),
+    scale: new Vector3(1,1,1)
+  }))
 
   // add a shape to the entity
   cube.addComponent(new BoxShape())
@@ -65,10 +69,3 @@ cube.addComponent(
 
 
 const hitEffect:EnemyHitEffects = new EnemyHitEffects(cube)
-
-//   public static swordSlash = new Audio(resources.sounds.swordSlash)
-function getRandomInt(min:number, max:number) : number{
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; 
-}
