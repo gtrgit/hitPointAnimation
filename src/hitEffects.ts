@@ -64,6 +64,7 @@ export class  EnemyHitEffects extends Entity{
   public  hitDamage(hitD6:number){
     log('hit damage '+hitD6)
     
+
     this.hitTextShape.value = '- '+hitD6.toString()
     this.newEndScale = (this.endScale * hitD6/4)
     this.slashEndScale = (this.endScale * hitD6)
@@ -114,7 +115,7 @@ export class  EnemyHitEffects extends Entity{
   public hitDamageGrow(): void{
     // this.newEndScale = (this.endScale * hitD6/2)
     Dash_AnimationQueue.add({
-        duration: .7,
+        duration: .5,
         data: { someval: 'foo' }, // optionally pass along some data that is accessible every frame
         onFrame: (progress, data) => {
             const transform = this.facingContainer.getComponent(Transform)    
@@ -133,7 +134,7 @@ export class  EnemyHitEffects extends Entity{
       //swap scales 
 
     Dash_AnimationQueue.add({
-        duration: .7,
+        duration: .5,
         data: { someval: 'foo' }, // optionally pass along some data that is accessible every frame
         onFrame: (progress, data) => {
             const transform = this.facingContainer.getComponent(Transform)

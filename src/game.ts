@@ -1,14 +1,14 @@
 import {CubeMonster} from "./cubeMonster";
 
 const transform = new Transform({position: new Vector3(8,1,9)})
-let tmp = new CubeMonster(transform,16)
+let tmp = new CubeMonster(transform,20)
 
 const transform2 = new Transform({position: new Vector3(6,1,9)})
 let tmp2 = new CubeMonster(transform2,20)
 
 
 const transform3 = new Transform({position: new Vector3(8,1,5)})
-let tmp3 = new CubeMonster(transform3,10)
+let tmp3 = new CubeMonster(transform3,20)
 
 // /// --- Set up a system ---
 
