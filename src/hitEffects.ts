@@ -21,9 +21,11 @@ export class  EnemyHitEffects extends Entity{
     public  slashEntity: Entity = new Entity()
     public slashEndScale = 0
 
-    constructor(parent:Entity){
+    constructor(
+        parent:Entity
+        ){
         super()
-        this.setParent(parent)
+        // this.setParent(parent)
         engine.addEntity(this)
         this.facingContainer.addComponent(new Transform())
         this.facingContainer.setParent(this)
