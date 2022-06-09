@@ -1,6 +1,6 @@
 # HitPoint animation using DCL_DASH
 
-![ Alt text](hitPointAnimation. gif) / ! [](hitPointAnimation. gif)
+![ Alt text](hitPointAnimation.gif) / ! [](hitPointAnimation.gif)
 
 # Decentraland scene
 
