@@ -1,3 +1,7 @@
+# HitPoint animation using DCL_DASH
+
+![ Alt text](hitPointAnimation. gif) / ! [](hitPointAnimation. gif)
+
 # Decentraland scene
 
 This folder contains all the necessary files to launch a Decentraland scene.
